@@ -1,0 +1,32 @@
+﻿@page
+@model OMC.Pages.Products.ProductDetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.ProductName)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Product.ProductName)
+            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.ProductPrice)
+            </th>
+            <td>
+                @Html.DisplayFor(model => model.Product.ProductPrice)
+            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Product.ProductImage)
+            </th>
+             <td>
+                <img src="data:image/jpg;base64,@Html.DisplayNameFor(model => model.Product.ProductImage)" />
+            </td>
+            <th>
+            </th>
+        </tr>
+    </thead>
+</table>

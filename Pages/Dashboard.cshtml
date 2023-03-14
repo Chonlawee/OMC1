@@ -1,0 +1,89 @@
+﻿@page
+@model OMC.Pages.DashboardModel
+@{
+}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>หน้าหลัก</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-lux.css" />
+   
+</head>
+
+
+
+<body>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Sugar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Cup_Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Cup_Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Status)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Order[0].ProductID)
+            </th>
+              <th>
+                @Html.DisplayNameFor(model => model.Order[0].QueuePosition)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order[0].Product)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Order)
+        {
+            <tr style="width:250px; height:250px">
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderId)
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Sugar)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Cup_Amount)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Cup_Price)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.ProductID)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.QueuePosition)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.Product)
+                </td>
+               
+               
+            </tr>
+        }
+    </tbody>
+</table>
+</body>
+</html>
