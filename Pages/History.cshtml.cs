@@ -6,10 +6,10 @@ using OMC.Models;
 
 namespace OMC.Pages
 {
-    public class DashboardModel : PageModel
+    public class HistoryModel : PageModel
     {
         private readonly OMCContext _context;
-        public DashboardModel(OMCContext context)
+        public HistoryModel(OMCContext context)
         {
             _context = context;
         }
@@ -19,7 +19,7 @@ namespace OMC.Pages
         {
             if (_context.Order != null)
             {
-               Order = await _context.Order.ToListAsync();
+                Order = await _context.Order.ToListAsync();
             }
         }
     }

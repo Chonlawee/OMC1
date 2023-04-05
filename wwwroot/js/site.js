@@ -2,3 +2,9 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+$("button").click(function () {
+    $(".check-icon").hide();
+    setTimeout(function () {
+        $(".check-icon").show();
+    }, 10);
+});

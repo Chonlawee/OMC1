@@ -5,6 +5,8 @@ namespace OMC.Models
 
     public class Product
     {
+        internal int total;
+
         public int ProductID { get; set; }
         public string ProductName { get; set; } = "Coffee";
         public int ProductPrice { get; set; }

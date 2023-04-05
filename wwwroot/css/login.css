@@ -1,8 +1,14 @@
-﻿﻿* {
-    font-family: 'Roboto', sans-serif;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
 }
-
 
 body {
     background-color: #EDD5C3;
+}
+
+.fa-bell{
+    visibility:hidden;
 }

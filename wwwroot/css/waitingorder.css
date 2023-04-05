@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
 }
-
-
+body {
+    background-color:#EDD5C3
+}
+.container {
+    background-color: #FAF4F4;
+    border-radius: 12px;
+}
 .con {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffefdb;
-    margin: 72px;   
+    margin: 72px;
     padding-top: 72px;
 }
 
@@ -19,7 +23,7 @@
     position: relative;
     width: 220px;
     height: 180px;
-    border: 8px solid #ffefdb;
+    border: 8px solid #FFF;
     box-shadow: 0 0 0 12px #352a22;
     border-radius: 10px 10px 60px 75px;
     background: url(../images/animationcoffee1/coffee.png);
@@ -91,7 +95,7 @@
     animation-delay: 1s;
 }
 
-.btn {
+.btn-primary_wait {
     background: #352a22;
     --bs-btn-color: #fff;
     --bs-btn-hover-color: #fff;

@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Noto Sans Thai', sans-serif;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-
+    background-color: #FAF4F4;
+    border-radius:12px;
 }
 
 .image {
@@ -53,4 +55,8 @@ body {
 }
 .lightLabel {
     font-weight: 300;
+}
+.custom-checkbox {
+    width: 25px;
+    height: 25px;
 }

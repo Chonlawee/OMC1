@@ -18,6 +18,7 @@ namespace OMC.Pages
         public Product Product { get; set; }
         [BindProperty]
         public Order Order { get; set; }
+      
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
@@ -93,12 +94,12 @@ namespace OMC.Pages
                 //        _context.Order.Add(Order);
                 //        _context.SaveChanges();
                 //    }
-
                     Order.ProductID = product.ProductID;
                     Order.Name = product.ProductName;
                     Order.Cup_Price = product.ProductPrice;
                     Order.Status = "Waiting";
             }
+            
 
 
             _context.Order.Add(Order);
@@ -106,5 +107,6 @@ namespace OMC.Pages
 
             return RedirectToPage("./Index");
         }
+       
     }
 }

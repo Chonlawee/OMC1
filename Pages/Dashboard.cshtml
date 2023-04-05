@@ -11,56 +11,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>หน้าหลัก</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-lux.css" />
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Dashboard.css" />
 </head>
 
 
 
 <body>
+   
+    <div class=container>
+
+    
 <table class="table">
     <thead>
-        <tr>
+            <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Order[0].OrderId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Order[0].Name)
+             หมายเลขสินค้า
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Order[0].Sugar)
+              ชื่อเครื่องดื่ม
+            </th>
+           
+            <th>
+              จำนวณแก้ว
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Order[0].Cup_Amount)
+               ราคาเครื่องดื่ม
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Order[0].Cup_Price)
+              สถานะ
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Order[0].Status)
-            </th>
-              <th>
-                @Html.DisplayNameFor(model => model.Order[0].ProductID)
-            </th>
-              <th>
-                @Html.DisplayNameFor(model => model.Order[0].QueuePosition)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Order[0].Product)
-            </th>
+            
+            
+
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.Order)
         {
-            <tr style="width:250px; height:250px">
+            <tr >
                 <td>
                     @Html.DisplayFor(modelItem => item.OrderId)
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
-                <td>
-                        @Html.DisplayFor(modelItem => item.Sugar)
-                </td>
+               
                 <td>
                         @Html.DisplayFor(modelItem => item.Cup_Amount)
                 </td>
@@ -69,21 +66,17 @@
                 </td>
                 <td>
                         @Html.DisplayFor(modelItem => item.Status)
+
                 </td>
-                <td>
-                        @Html.DisplayFor(modelItem => item.ProductID)
-                </td>
-                <td>
-                        @Html.DisplayFor(modelItem => item.QueuePosition)
-                </td>
-                <td>
-                        @Html.DisplayFor(modelItem => item.Product)
-                </td>
+            
+            
                
                
             </tr>
         }
     </tbody>
 </table>
+
+    </div>
 </body>
 </html>
